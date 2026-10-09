@@ -7,7 +7,7 @@ interface Interface1 {
 
     // Static method
     static void info() {
-        System.out.println("Animals make different sounds");
+        System.out.println("Animals make different sounds in Info class.");
     }
 }
 
@@ -19,15 +19,15 @@ class InterfaceCheckChild implements Interface1 {
     }
 }
 
-public class InterfaceCheck {
+public class InterfaceCheck{
     public static void main(String[] args) {
 
-        Dog d = new Dog();
+        InterfaceCheckChild d = new InterfaceCheckChild();
 
-        // Calling the abstract method
-        d.sound();
 
-        // Calling the static method
-        InterfaceCheckChild.info();
+       // d.sound();
+
+
+        Interface1.info();  // Remember that here as info was a static method, so it cannot be accessed using the name of the implementing class, rather we will have to use the name of the interface itself.
     }
 }

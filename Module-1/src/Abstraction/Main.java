@@ -21,9 +21,9 @@ class Dog extends Animal {
 public class Main {
     public static void main(String[] args) {
 
-        Animal a = new Dog();
+        InterfaceCheckChild a = new InterfaceCheckChild();
 
         a.sound();
-        a.sleep();
+
     }
 }
