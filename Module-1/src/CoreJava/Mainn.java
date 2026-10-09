@@ -11,7 +11,7 @@ class Parentt {
     }
 }
 
-class Child extends Parentt {
+class Childd extends Parentt {
 
     static void display() {
         System.out.println("Display method of Child");
@@ -22,12 +22,12 @@ class Child extends Parentt {
     }
 }
 
-public class Main {
+public class Mainn {
 
     public static void main(String[] args) {
 
         Parentt p = new Parentt();
-        Parentt pc = new Child();
+        Parentt pc = new Childd();
         Child c = new Child();
 
         p.display();
