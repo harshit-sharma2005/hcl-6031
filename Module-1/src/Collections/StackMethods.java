@@ -15,12 +15,12 @@ public class StackMethods {
 
         System.out.println("Stack: " + stack);
 
-        // Pop the top element
+
         System.out.println("Popped: " + stack.pop());
 
         System.out.println("Stack after pop: " + stack);
 
-        // Check if stack is empty again
+
         System.out.println("Is stack empty? " + stack.isEmpty());
     }
 }
