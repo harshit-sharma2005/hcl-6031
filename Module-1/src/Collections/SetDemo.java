@@ -10,7 +10,7 @@ public class SetDemo {
         set.add(10);
         set.add(20);
         set.add(30);
-        set.add(20); // Duplicate will not be considerd in the set
+        set.add(20); // Duplicate will not be considered in the set
 
         System.out.println(set);
         System.out.println(set.size());

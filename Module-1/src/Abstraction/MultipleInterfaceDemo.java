@@ -25,7 +25,7 @@ public class MultipleInterfaceDemo {
     public static void main(String[] args) {
 
         MultiFunctionPrinter printer = new MultiFunctionPrinter();
-
+// Made the object of the class implementing both the interfaces and called both the methods through the object.
         printer.printDocument();
         printer.scanDocument();
     }
