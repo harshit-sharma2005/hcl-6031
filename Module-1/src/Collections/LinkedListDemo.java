@@ -14,6 +14,18 @@ public class LinkedListDemo {
         list.add(40);
         list.add(50);
 
+
+
+        list.add(25);
+        list.addLast(100);
+        list.addFirst(0);
+        System.out.println(list.indexOf(100));
+        System.out.println(list.get(5));
+
+        System.out.println("After searching and inserting: " + list);
+
+
+        // Now using the ListIterator for insertion and searching
         // Case 1: Position is known
         ListIterator<Integer> itr = list.listIterator(3);
         itr.add(35);
@@ -31,7 +43,5 @@ public class LinkedListDemo {
                 break;
             }
         }
-
-        System.out.println("After searching and inserting: " + list);
     }
 }

@@ -14,7 +14,8 @@ interface Interface1 {
 class InterfaceCheckChild implements Interface1 {
 
     @Override
-    public void sound() {
+    public void sound()
+    {
         System.out.println("Dog barks");
     }
 }
@@ -25,7 +26,7 @@ public class InterfaceCheck{
         InterfaceCheckChild d = new InterfaceCheckChild();
 
 
-       // d.sound();
+        d.sound();
 
 
         Interface1.info();  // Remember that here as info was a static method, so it cannot be accessed using the name of the implementing class, rather we will have to use the name of the interface itself.
