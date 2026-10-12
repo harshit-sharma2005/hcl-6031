@@ -18,7 +18,7 @@ public class StudentList {
                 new Student("Vikas", 9, 22, 70.0),
                 new Student("Pooja", 10, 20, 86.5)
         ));
-
+            // Sorting using the Czomparable object.
         System.out.println("Original List:");
         list.forEach(System.out::println);
 
@@ -30,7 +30,25 @@ public class StudentList {
         // Sort by marks using Comparator
         Collections.sort(list, (s1, s2) -> Double.compare(s1.marks, s2.marks));
 
-        System.out.println("\nSorted by Marks:");
+        System.out.println("Sorted by Marks:");
+        list.forEach(System.out::println);
+
+
+        // Now Sorting using the Comparator.
+
+        System.out.println("Original List:");
+        list.forEach(System.out::println);
+
+        // Sort by age
+        Collections.sort(list, new AgeComparator());
+
+        System.out.println("\nSorted by Age:");
+        list.forEach(System.out::println);
+
+        // Sort by marks
+        Collections.sort(list, new MarksComparator());
+
+        System.out.println("Sorted by Marks:");
         list.forEach(System.out::println);
     }
 }
