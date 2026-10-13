@@ -10,6 +10,9 @@ interface Calculator {
 public class Calculation {
     public static void main(String[] args) {
 
+
+        // These all are the lambda functions. And we are having our own implementations of the calculate method which
+        // we are overriding here in this class.
         Calculator add = (a, b) -> a + b;
         Calculator sub = (a, b) -> a - b;
         Calculator mul = (a, b) -> a * b;
