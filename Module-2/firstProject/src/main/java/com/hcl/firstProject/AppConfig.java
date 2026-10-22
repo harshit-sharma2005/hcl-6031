@@ -1,0 +1,13 @@
+package com.hcl.firstProject;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration("mainAppConfig")
+public class AppConfig {
+
+    @Bean
+    public Employer employee() {
+        return new Employer();
+    }
+}
